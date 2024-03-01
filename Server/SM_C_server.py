@@ -22,7 +22,7 @@ app.config['UPLOAD_FOLDER'] = "Uploads"
 #App routes
 @app.route('/')
 def helloworld():
-    return render_template('main.html')
+    return render_template('index.html')
 
 if __name__ == "__main__":
     # appFlask.run(ssl_context='adhoc')

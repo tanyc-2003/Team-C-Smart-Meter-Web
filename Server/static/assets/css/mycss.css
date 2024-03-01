@@ -1,0 +1,52 @@
+
+.large-button {
+    display: block;
+    width: 100%;
+    padding-top: 40%;
+    padding-bottom: 40%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3498db;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.large-button:hover {
+    color: #ffffff;
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.large-button.renew_s {
+    background-color: #34db42;
+}
+
+.large-button.renew_s:hover {
+    background-color: #29b93a;
+}
+
+.large-button.batt {
+    background-color: #dbb134;
+}
+
+.large-button.batt:hover {
+    background-color: #b99a29;
+}
+
+.large-button.load {
+    background-color: #db7c34;
+}
+
+.large-button.load:hover {
+    background-color: #b96f29;
+}
+
