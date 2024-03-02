@@ -5,8 +5,8 @@ from flask import jsonify
 import webbrowser
 import gunicorn
 
-url = "http://127.0.0.1:5000"
-webbrowser.open(url)
+# url = "http://127.0.0.1:5000"
+# webbrowser.open(url)
 
 #Server configurations
 app = Flask(__name__, static_folder='static')
