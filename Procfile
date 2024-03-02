@@ -1,1 +1,0 @@
-web: gunicorn SM_C_server:app
