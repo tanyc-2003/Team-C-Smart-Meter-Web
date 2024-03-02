@@ -3,8 +3,7 @@ from flask import render_template
 from flask import request
 from flask import jsonify
 import webbrowser
-
-
+import gunicorn
 
 url = "http://127.0.0.1:5000"
 webbrowser.open(url)
@@ -12,8 +11,6 @@ webbrowser.open(url)
 #Server configurations
 app = Flask(__name__, static_folder='static')
 app.config['UPLOAD_FOLDER'] = "Uploads"
-
-
 
 
 #App routes
