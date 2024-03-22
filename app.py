@@ -27,13 +27,18 @@ def getButtonPressed(msg):
     # change buttonPressed value
     global buttonPressed
     buttonPressed = msg
-    return "0"
+    return "succeed"
 
 @app.route('/requestButtonPressed')
 def requestButtonPressed():
     # post buttonPressed value
     global buttonPressed
-    return buttonPressed
+    if buttonPressed != "0":
+        temp = buttonPressed
+        buttonPressed = "0"
+    else:
+        temp = "0"
+    return temp
 
 
 
