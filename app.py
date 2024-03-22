@@ -29,7 +29,7 @@ def getButtonPressed(msg):
     buttonPressed = msg
     return "succeed"
 
-@app.route('/requestButtonPressed')
+@app.route('/requestButtonPressed', methods=["GET", "POST"])
 def requestButtonPressed():
     # post buttonPressed value
     global buttonPressed
