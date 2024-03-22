@@ -1,3 +1,43 @@
+const Button_H = document.getElementById("home");
+const Button_R = document.getElementById("renew_s");
+const Button_L = document.getElementById("load");
+const Button_B = document.getElementById("batt");
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", theUrl, false); // false for synchronous request
+    xmlHttp.send(null);
+    return xmlHttp.responseText;
+}
+
+function H_butt_clicked() {
+  buttonValue = "H";
+  var url = "/getButtonPressed/" + (buttonValue).replace(" ", "%20");
+  console.log(httpGet(url));
+}
+
+function R_butt_clicked() {
+  buttonValue = "R";
+  var url = "/getButtonPressed/" + (buttonValue).replace(" ", "%20");
+  console.log(httpGet(url));
+}
+
+function L_butt_clicked() {
+  buttonValue = "L";
+  var url = "/getButtonPressed/" + (buttonValue).replace(" ", "%20");
+  console.log(httpGet(url));
+}
+
+function B_butt_clicked() {
+  buttonValue = "B";
+  var url = "/getButtonPressed/" + (buttonValue).replace(" ", "%20");
+  console.log(httpGet(url));
+}
+
+
+
+//-------------------- DATA ----------------------- //
 document.addEventListener("DOMContentLoaded", () => {
     new ApexCharts(document.querySelector("#reportsChart"), {
       series: [{
